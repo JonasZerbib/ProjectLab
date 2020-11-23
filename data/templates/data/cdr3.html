@@ -1,0 +1,256 @@
+<!doctype html>
+<html class="no-js" lang="zxx">
+
+<head>
+    <meta charset="utf-8">
+    <meta http-equiv="x-ua-compatible" content="ie=edge">
+    <title>Cdr3 feature</title>
+    <meta name="description" content="">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+
+    <!-- <link rel="manifest" href="site.webmanifest"> -->
+    <link rel="shortcut icon" type="image/x-icon" href="../../static/data/img/favicon.png">
+    <!-- Place favicon.ico in the root directory -->
+
+    <!-- CSS here -->
+    <link rel="stylesheet" href="../../static/data/css/bootstrap.min.css">
+    <link rel="stylesheet" href="../../static/data/css/owl.carousel.min.css">
+    <link rel="stylesheet" href="../../static/data/css/magnific-popup.css">
+    <link rel="stylesheet" href="../../static/data/css/font-awesome.min.css">
+    <link rel="stylesheet" href="../../static/data/css/themify-icons.css">
+    <link rel="stylesheet" href="../../static/data/css/nice-select.css">
+    <link rel="stylesheet" href="../../static/data/css/flaticon.css">
+    <link rel="stylesheet" href="../../static/data/css/gijgo.css">
+    <link rel="stylesheet" href="../../static/data/css/animate.css">
+    <link rel="stylesheet" href="../../static/data/css/slicknav.css">
+    <link rel="stylesheet" href="../../static/data/css/style.css">
+    <!-- <link rel="stylesheet" href="css/responsive.css"> -->
+</head>
+
+<body>
+    <!--[if lte IE 9]>
+            <p class="browserupgrade">You are using an <strong>outdated</strong> browser. Please <a href="https://browsehappy.com/">upgrade your browser</a> to improve your experience and security.</p>
+        <![endif]-->
+
+
+    <!-- header-start -->
+    <header>
+        <div class="header-area ">
+            <div id="sticky-header" class="main-header-area">
+                <div class="container-fluid">
+                    <div class="row align-items-center">
+                        <div class="col-xl-3 col-lg-3">
+                            <div class="logo-img">
+                                <a href="{% url 'data:home' %}">
+                                    <img src="../../static/data/img/home.PNG" alt="">
+                                </a>
+                            </div>
+                        </div>
+                        <div class="col-xl-9 col-lg-9">
+                            <div class="menu_wrap d-none d-lg-block">
+                                <div class="menu_wrap_inner d-flex align-items-center justify-content-end">
+                                    <div class="main-menu">
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col-12">
+                            <div class="mobile_menu d-block d-lg-none"></div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </header>
+    <!-- header-end -->
+
+
+ <!--toute cette partie qui suite doit etre comprise entre le header et le footer-->
+    <div class="expert_doctors_area">
+        <div class="container-fluid">
+            <div class="row justify-content-center ">
+                <div class="col-lg-6">
+                    <div class="section_title mb-55 text-center">
+                        <h3>CDR3 feature</h3><h4>Logistic Regression</h4>
+                        <p>Cdr 3 is a part of antibody that is concerned by connection between the antibody and the antigen</p>
+                    </div>
+                </div>
+            </div>
+            <div class="section-top-border">
+                <div class="row">
+                    <div class="col-lg-3 border-right">
+                        <div class="row">
+                            <h4><U>Leave 1 out Cross validation</U></h4>
+                        </div>
+                        <div class="row">
+                            If you want to test some models in order to check which is the best model for your research, it is possible to use the leave one out cross validation method by clicking here: <a href="{% url 'data:crossValidation' %}">leave 1 out cross validation</a> <br><br>
+                        </div>
+                        <div class="row">
+                            <h4><U>Logistic Regression algorithm</U></h4>
+                        </div>
+                        <div class="row">
+                            <form method="post" action="">
+                                {% csrf_token %}
+                                {{ form }}<br><br>
+                                <input type="submit" value="results">
+                            </form><br><br>
+                        </div>
+                        <div class="row">
+                            <h5>Definitions</h5>
+                        </div>
+                        <div class="row container-fluid">
+                            <strong>epochs</strong> epoch refers to one cycle through the full training dataset <br>
+                        </div>
+                        <div class="row container-fluid">
+                            <strong>learning rate</strong> learning rate is a tuning parameter in an optimization algorithm that determines the step size at each iteration while moving toward a minimum of a loss function.<br>
+                        </div>
+                        <div class="row container-fluid">
+                            <strong>threshold</strong> The output of a Logistic regression model is a probability. We can select a threshold value. If the probability is greater than this threshold value, the event is predicted to happen otherwise it is predicted not to happen.<br>
+                        </div>
+                        <div class="row container-fluid">
+                            <strong>split</strong> Percentage of the dataset for the trainning set. The rest of the dataset will be for validation set<br>
+                        </div>
+                        <div class="row container-fluid">
+                            <strong>kmers:</strong>The length of snippet.<br><br>
+                        </div>
+                        <div class="row container-fluid">
+                            <h4>Note :</h4>
+                            It is important to point out that it will take a long time to receive the results, as the code run on the local system, which is made up of 8 i5 cores of intell, supporting 8GB of physical memory. When we subsequently transfer the program to the more powerful laboratory servers with 64 cores, as well as 16GB of RAM.<br><br>
+                        </div>
+
+                    </div>
+                    <div class="col-lg-9 col-md-6 container-fluid">
+                        <div class="row container-fluid">
+                            We focused on the CDR3 part of the antibodies which constitutes the specific part which can recognize an antigen or external element of our organism.
+                            From the CDR3 nucleotide sequences of the antibodies, we wanted to predict with the help of Logistic regression algorithm whether a patient has Celiac disease or not.
+                            The different steps that we are going to take in order to be able to predict from the CDR3 nucleotide sequences of the antibodies Here is the patient, if he has celiac disease or not:<br>
+                            The different stages are as follows: <br><br>
+                        </div>
+                        <div class="row container-fluid">
+                            <h4>1) Feature engineering</h4>
+                            First we remove some of the antibodies containing stop codons in theirs DNA sequence of CDR3_IMGT, others containing NaN, some containing the letter “N”, and some containing a "-" . For example, For the celiac dataset, we delete 23 nucleotide sequences containing stop codons, 41415 containing the letter "N", 199 containing "-", and 411 containing NaN.<br>
+                            After cleaning up our DNA sequences that were invalid, for each patient, we translate DNA sequence of each antibodie in RNA sequences (amino acid sequence).<br>
+                            Then each sequence of amino acids is cut into several snippets of the same size as follows:<br><br>
+                                <img src="../../static/data/img/featureEngineeringCDR3.PNG" width="916" height="115" alt=""><br>
+                            For a patient, let's keep only one snippet of each type and also keep the relative frequency of each snippet among all its snippets.<br>
+                            So at this point for each patient we have a table that contains unique snippet sequences.
+                            Then finally, We transform each patient's snippet into a vector that contains the 5 atchley's factor of each amino acid in the snippet, The five Atchley factors correspond to polarity, secondary structure, molecular volume, codon diversity, and electrostatic charge. We add the snippet frequency among the total number of snippets of the patient, and we add 1 (it will be used for the bias for the machine learning that we will see below). For example, for a snippet of size 7, given that each amino acid corresponds to 5 atchley's factors, we thus obtain for each patient a table which contains the following vectors (each of them corresponding to a snippet):<br><br>
+                        </div>
+                        <div class="row justify-content-lg-center">
+                            <img src="../../static/data/img/vectorOfSnippet.PNG" width="497" height="37" alt=""><br><br>
+                        </div>
+                        <div class="row container-fluid">
+                            <br>Atchley's factor are in the follow scientific article: Atchley's factor<br>
+                            The number of snippets for each patient is not the same.<br>
+                            After having the CDR3 nucleic acid sequences of each in numerical vectors, we can proceed to the next step, logistic regression.<br>
+                        </div><br>
+                        <div class="row container-fluid" id="logisticRegression">
+                            <h4>2) Logistic regression</h4>
+                            in order to train our model using the machine learning logistic regression algorithm, for each patient we calculate the logit of each snippet by multiplying the vector of each snippet with the weight vector which is of the same dimension as that of the snippet vector, as following (example with kmers=7):<br><br>
+                        </div>
+                        <div class="row justify-content-lg-center">
+                            <img src="../../static/data/img/logit.PNG" width="861" height="41" alt=""><br><br>
+                        </div>
+                        <div class="row container-fluid">
+                            After that, we calculate the score using the sigmoid activation function as follows:<br><br>
+                        </div>
+                        <div class="row justify-content-lg-center">
+                            <img src="../../static/data/img/score.PNG" width="268" height="35" alt=""><br><br>
+                        </div>
+                        <div class="row container-fluid">
+                            Assuming the output of the detector function sigmoid represents a probability value between 0 and 1, the form of the model can be written as:<br><br>
+                        </div>
+                        <div class="row justify-content-lg-center">
+                            <img src="../../static/data/img/probability.PNG" width="730" height="31" alt=""><br><br>
+                        </div>
+                        <div class="row container-fluid">
+                            Thus for a patient, the prediction corresponds to the highest score among the scores of all his snippets. A probability >0.5 indicates a positive diagnosis (Celiac disease), whereas a value <0.5 indicates a negative diagnosis (healthy).<br><br>
+                            To train our model, after each prediction (True or false), we modify our weight vector according to the prediction in order to maximize the likelihood. The number of patients corresponding to the training set corresponds to the split that you enter in parameter, and the number of times that we spend on all the patients of the training set corresponds to the number of epochs.<br><br>
+                            Finally, to test our model, we will recover the last weight vector of the training phase, and we will check the predictions on our validation set.<br><br>
+                        </div>
+                         <div class="row container-fluid">
+                            <h4>3) Results of the algorithm</h4> <br>
+                        </div>
+                        <div class="row container-fluid">
+                            After training and testing our model, we provide the results in the form of graphs in order to be able to analyze the results:<br><br>
+                            <ol>
+                                <li><B class="color-1">.</B>The first plot represents distribution of snippets scores for sick and not sick patient and include summary statistic information</li>
+                                <li><B class="color-1">.</B>The second plot represents the accuracy (normalized to range [0,1]) & loss lines VS epoch number.</li>
+                                <li><B class="color-1">.</B>The third plot presents T.P.rate/F.P.rate and their composants and Precision for our test-set after the train explained above. (Here one point only because</li>
+                                <li><B class="color-1">.</B>The forth plot represents a biochemical analysis of the final weight vector (Classifier Final Weights). For each of the five Atchley factors, the weights for the model fit on our train-set described above are shown for the 7 residue positions. Positive weight values are shown in bars pointing up, and negative weight values are shown in bars pointing down. The length of the bars corresponds to the weight’s magnitude and the color legend indicates wich bar corresponds to which posiition in the snippet</li>
+                            </ol>
+                        </div>
+
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- ...............Footer............. -->
+    <footer class="footer">
+        <div class="copy-right_text">
+            <div class="container">
+                <div class="row">
+                    <div class="bordered_1px "></div>
+                    <div class="col-xl-12">
+                        <p class="copy_right text-center">
+                            <p><!-- Link back to Colorlib can't be removed. Template is licensed under CC BY 3.0. -->
+  Copyright &copy;<script>document.write(new Date().getFullYear());</script> All rights reserved | This template is made with <i class="ti-heart" aria-hidden="true"></i> by <a href="https://colorlib.com" target="_blank">Colorlib</a>
+  <!-- Link back to Colorlib can't be removed. Template is licensed under CC BY 3.0. --></p>
+
+                    </div>
+                </div>
+            </div>
+        </div>
+    </footer>
+
+
+    <!-- JS here -->
+    <script src="../../static/data/js/vendor/modernizr-3.5.0.min.js"></script>
+    <script src="../../static/data/js/vendor/jquery-1.12.4.min.js"></script>
+    <script src="../../static/data/js/popper.min.js"></script>
+    <script src="../../static/data/js/bootstrap.min.js"></script>
+    <script src="../../static/data/js/owl.carousel.min.js"></script>
+    <script src="../../static/data/js/isotope.pkgd.min.js"></script>
+    <script src="../../static/data/js/ajax-form.js"></script>
+    <script src="../../static/data/js/waypoints.min.js"></script>
+    <script src="../../static/data/js/jquery.counterup.min.js"></script>
+    <script src="../../static/data/js/imagesloaded.pkgd.min.js"></script>
+    <script src="../../static/data/js/scrollIt.js"></script>
+    <script src="../../static/data/js/jquery.scrollUp.min.js"></script>
+    <script src="../../static/data/js/wow.min.js"></script>
+    <script src="../../static/data/js/nice-select.min.js"></script>
+    <script src="../../static/data/js/jquery.slicknav.min.js"></script>
+    <script src="../../static/data/js/jquery.magnific-popup.min.js"></script>
+    <script src="../../static/data/js/plugins.js"></script>
+    <script src="../../static/data/js/gijgo.min.js"></script>
+    <!--contact js-->
+    <script src="../../static/data/js/contact.js"></script>
+    <script src="../../static/data/js/jquery.ajaxchimp.min.js"></script>
+    <script src="../../static/data/js/jquery.form.js"></script>
+    <script src="../../static/data/js/jquery.validate.min.js"></script>
+    <script src="../../static/data/js/mail-script.js"></script>
+
+    <script src="../../static/data/js/main.js"></script>
+    <script>
+        $('.datepicker').datepicker({
+            iconsLibrary: 'fontawesome',
+            icons: {
+                rightIcon: '<span class="fa fa-calendar"></span>'
+            }
+        });
+
+        $('.timepicker').timepicker({
+            iconsLibrary: 'fontawesome',
+            icons: {
+                rightIcon: '<span class="fa fa-clock-o"></span>'
+            }
+        });
+    $(document).ready(function() {
+    $('.js-example-basic-multiple').select2();
+});
+    </script>
+
+</body>
+ </html>

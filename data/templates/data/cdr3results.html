@@ -1,0 +1,221 @@
+
+<!doctype html>
+<html class="no-js" lang="zxx">
+
+<head>
+    <meta charset="utf-8">
+    <meta http-equiv="x-ua-compatible" content="ie=edge">
+    <title>Cdr3 results</title>
+    <meta name="description" content="">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+
+    <!-- <link rel="manifest" href="site.webmanifest"> -->
+    <link rel="shortcut icon" type="image/x-icon" href="../../static/data/img/favicon.png">
+    <!-- Place favicon.ico in the root directory -->
+
+    <!-- CSS here -->
+    <link rel="stylesheet" href="../../static/data/css/bootstrap.min.css">
+    <link rel="stylesheet" href="../../static/data/css/owl.carousel.min.css">
+    <link rel="stylesheet" href="../../static/data/css/magnific-popup.css">
+    <link rel="stylesheet" href="../../static/data/css/font-awesome.min.css">
+    <link rel="stylesheet" href="../../static/data/css/themify-icons.css">
+    <link rel="stylesheet" href="../../static/data/css/nice-select.css">
+    <link rel="stylesheet" href="../../static/data/css/flaticon.css">
+    <link rel="stylesheet" href="../../static/data/css/gijgo.css">
+    <link rel="stylesheet" href="../../static/data/css/animate.css">
+    <link rel="stylesheet" href="../../static/data/css/slicknav.css">
+    <link rel="stylesheet" href="../../static/data/css/style.css">
+    <!-- <link rel="stylesheet" href="css/responsive.css"> -->
+</head>
+
+<body>
+    <!--[if lte IE 9]>#}
+            <p class="browserupgrade">You are using an <strong>outdated</strong> browser. Please <a href="https://browsehappy.com/">upgrade your browser</a> to improve your experience and security.</p>
+        <![endif]-->
+
+
+    <!-- header-start -->
+    <header>
+        <div class="header-area ">
+            <div id="sticky-header" class="main-header-area">
+                <div class="container-fluid">
+                    <div class="row align-items-center">
+                        <div class="col-xl-3 col-lg-3">
+                            <div class="logo-img">
+                                <a href="{% url 'data:home' %}">
+                                    <img src="../../static/data/img/home.PNG" alt="">
+                                </a>
+                            </div>
+                        </div>
+                        <div class="col-xl-9 col-lg-9">
+                            <div class="menu_wrap d-none d-lg-block">
+                                <div class="menu_wrap_inner d-flex align-items-center justify-content-end">
+                                    <div class="main-menu">
+                                        <nav>
+                                            <ul id="navigation">
+                                                <li>about us</li>
+                                            </ul>
+                                        </nav>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col-12">
+                            <div class="mobile_menu d-block d-lg-none"></div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </header>
+    <!-- header-end -->
+
+
+<!-- toute cette partie qui suite doit etre comprise entre le header et le footer -->
+    <div class="expert_doctors_area">
+        <div class="container-fluid">
+            <div class="row justify-content-center ">
+                <div class="col-lg-6">
+                    <div class="section_title mb-55 text-center">
+                        <h3>Results</h3>
+                    </div>
+                </div>
+            </div>
+                <div class="row justify-content-center">
+                    <div class="col-lg-6">
+                        <img src = "data:image/png;base64,{{ data1 }}" alt="" height="500" width="600">
+                    </div>
+                   <div class="col-lg-6">
+                        <img src = "data:image/png;base64,{{ data2 }}" alt="" height="500" width="600">
+                    </div>
+                </div>
+                <div class="row justify-content-center">
+                   <div class="col-lg-6">
+                        <img src = "data:image/png;base64,{{ data3 }}" alt="" height="500" width="600">
+                    </div>
+                   <div class="col-lg-6">
+                        <img src = "data:image/png;base64,{{ data4 }}" alt="" height="500" width="600">
+                    </div>
+                </div>
+                <div class="row justify-content-center">
+                    <img src = "data:image/png;base64,{{ data5 }}" alt="" height="500" width="600">
+                </div> <br><br>
+                <div class="row justify-content-center"> <br><br>
+                    <h5>At the top left: This plot provides a biochemical analysis of the diagnostic motif</h5>
+                    This plot presents the different biochemical characteristics of the final weight vector obtained after finding the best model by cross validation. It presents, for each simulation made by modification of the key parameters of the algorithm presented above, the weight vector obtained after the learning phase. This weight vector being the one which determines the diagnosis for each patient by attributing scores to each snippet present in the latter, it is essential to be able to analyze its components , when the classifier is sufficiently reliable with a satisfactory level of precision, to discern the biochemical features of snippets resulting in a positive diagnosis.
+The weights reveal how each Atchley factor contributes to the score and the relative importance of each position.
+Indeed we can think of the weight values ​​of the weight vector as an importance indicator  of the parameter to which it applies in the establishment of a diagnostic classifier.
+In other words, for a given snippet, an Atchley factor being assigned a significant weight (in absolute value) is more determining as to the biochemical characteristic that it represents in the diagnosis rather than another Atchley factor with less weight.
+The plot presents six groups of values.
+The first five groups correspond to an Atchley factor and therefore to a particular non-characteristic biochemical.
+The first concerns polarity, hidrophilicity for positive values ​​and hidrophobicity for negative values.
+The second concerns the secondary structure with a presence of bends, packages, turns for positive values ​​and an alpha helix structure for negative values.
+The third concerns the molecular volume with a smaller volume for positive values ​​and greater for negative values.
+The fourth concerns codon diversity with greater usage for positive values ​​and heat and refraction capacity for negative values.
+The fifth finally concerns the electrostatic charge with a positive charge associated with positive weight values ​​and vice versa.
+A snippet is made up of a k-mer number of amino acids,for each Atchley factor are represented in different colors, the different amino acids of the snippet. (k-mers = 7 on the example).
+Finally the sixth group of values ​​presents the weights obtained for the following two parameters: the relative frequency and the constant of bias, thus making it possible to understand the importance of the latter in the diagnosis.<br><br>
+                    <h5>At the top right: 7.3.	Learning Loss per epoch</h5><br>
+                    This plot, similar to the previous one represents the evolution of the ''error function'' or loss function. In statistics, typically a loss function is used for parameter estimation, and the event in question is some function of the difference between estimated and true values for an instance of data and thus an optimization problem seeks to minimize a loss function.
+These two data (plot #2 et #3) allow us first of all to note or not a learning behavior (increase of the precision and decrease of the function loss), but also informs us on the quality of the learning.
+Indeed a very noisy signal implies a too important learning step and vice versa, or a stagnation of the precision curve makes it possible to prevent overfitting and to determine for an adjustment of the other defined parameters, the number of epoch ideal to obtain a maximal precision in the learning phase.
+<br><br>
+                    <h5>At the midle left: This graph concerns the results of the predictions made for the test phase</h5><br>
+                    The algorithm, having completed its training on the trainning-set, the final weight vector obtained is used to predict the unseen patients and an analysis of the quality  of this weight vector ,sensitivity and specificity of the model, is here made (Sensitivity and specificity are statistical measures of the performance of a binary classification test that are widely used in medicine).Several parameters are thus represented  as well as the chosen treshold wich in the title which is the main parameter which is the parameter that influenced the most in terms of the sensitivity and specificity of a model ;
+The true positives noted by T.P in legend shows the number of patients who have been diagnosed as sick and really are.
+The true negatives marked with T.N in the legend present the number of patients who were diagnosed as not sick and really are.
+The False positives noted as F.P in the legend present the number of patients who were diagnosed as sick when they were not actually sick.
+The False negatives denoted by F.N in legend present the number of patients who were diagnosed as not sick when they are actually sick.
+By calculating ratios between these values, we can quantitatively measure the accuracy of our tests.
+The false positive rate presented here in the x-axis is calculated as FP/FP+TN (FP+TN being the total number of negatives). It’s the probability that a false alarm will be raised: that a positive result will be given when the true value is negative.
+The true positive rate (TPR) is calculated as TP/TP+FN. TPR is the probability that an actual positive will test positive.<br><br>
+                    <h5>At the midle right: This plot relates to the results obtained on the test-set</h5><br>
+                    The fourth plot also relates to the results obtained on the test-set.The snippet scores of healthy patients are represented by the blue bars and those of the sick patients are represented by the red bars.
+On the x-axis we find the different scores (between 0 and 1) and on the y-axis the proportions of corresponding scores.
+The algorithm used in our method being a logistic regression we tend to have the classification as "binary" as possible, namely that healthy patients are given scores as close as possible to 0 for all the snippets present in them.
+In sick people, we obviously hope that the snippets directly related to the disease are recognized as such with a score as close as possible to 1, but also that all the remaining snippets are themselves recognized as non-determinants and therefore are assigned a score. low score.
+The quantity of snippets being able to represent a valid pattern for Celiac disease being extremely low compared to the total number of snippets present in an individual, we can therefore see the quality of our classifier thanks to this plot.
+Indeed, according to the above, an efficient classifier will present a very small number of scores above the chosen threshold and the highest possible and a score very close to 0 for all the remaining snippets.
+The basic statistical information such as (minimum value, maximum value, mean value and standard deviation) is provided in the plot too for more accurate analysis of the obtainded scores.<br><br>
+                    <h5>At the midle left: This graph concerns the results of the predictions made for the test phase</h5><br>
+                    The algorithm, having completed its training on the trainning-set, the final weight vector obtained is used to predict the unseen patients and an analysis of the quality  of this weight vector ,sensitivity and specificity of the model, is here made (Sensitivity and specificity are statistical measures of the performance of a binary classification test that are widely used in medicine).Several parameters are thus represented  as well as the chosen treshold wich in the title which is the main parameter which is the parameter that influenced the most in terms of the sensitivity and specificity of a model ;
+The true positives noted by T.P in legend shows the number of patients who have been diagnosed as sick and really are.
+The true negatives marked with T.N in the legend present the number of patients who were diagnosed as not sick and really are.
+The False positives noted as F.P in the legend present the number of patients who were diagnosed as sick when they were not actually sick.
+The False negatives denoted by F.N in legend present the number of patients who were diagnosed as not sick when they are actually sick.
+By calculating ratios between these values, we can quantitatively measure the accuracy of our tests.
+The false positive rate presented here in the x-axis is calculated as FP/FP+TN (FP+TN being the total number of negatives). It’s the probability that a false alarm will be raised: that a positive result will be given when the true value is negative.
+The true positive rate (TPR) is calculated as TP/TP+FN. TPR is the probability that an actual positive will test positive.<br><br>
+                    <h5>Learning accuracy per epoch </h5><br>
+               This plot is an analysis of the ‘’quality of learning ‘’ of our algorithm. The aim here is to present the evolution of the predictive precision of the algorithm during the learning phase as the number of epochs increases.     The chosen kmers appears in the title as well as the chosen nunber of epochs for the training.
+
+                </div>
+            </div>
+        </div>
+
+
+    <footer class="footer">
+        <div class="copy-right_text">
+            <div class="container">
+                <div class="row">
+                    <div class="bordered_1px "></div>
+                    <div class="col-xl-12">
+                        <p class="copy_right text-center">
+                            <p><!-- Link back to Colorlib can't be removed. Template is licensed under CC BY 3.0. -->
+  Copyright &copy;<script>document.write(new Date().getFullYear());</script> All rights reserved | This template is made with <i class="ti-heart" aria-hidden="true"></i> by <a href="https://colorlib.com" target="_blank">Colorlib</a>
+  <!-- Link back to Colorlib can't be removed. Template is licensed under CC BY 3.0. --></p>
+
+                    </div>
+                </div>
+            </div>
+        </div>
+    </footer>
+
+    <!-- JS here -->
+    <script src="../../static/data/js/vendor/modernizr-3.5.0.min.js"></script>
+    <script src="../../static/data/js/vendor/jquery-1.12.4.min.js"></script>
+    <script src="../../static/data/js/popper.min.js"></script>
+    <script src="../../static/data/js/bootstrap.min.js"></script>
+    <script src="../../static/data/js/owl.carousel.min.js"></script>
+    <script src="../../static/data/js/isotope.pkgd.min.js"></script>
+    <script src="../../static/data/js/ajax-form.js"></script>
+    <script src="../../static/data/js/waypoints.min.js"></script>
+    <script src="../../static/data/js/jquery.counterup.min.js"></script>
+    <script src="../../static/data/js/imagesloaded.pkgd.min.js"></script>
+    <script src="../../static/data/js/scrollIt.js"></script>
+    <script src="../../static/data/js/jquery.scrollUp.min.js"></script>
+    <script src="../../static/data/js/wow.min.js"></script>
+    <script src="../../static/data/js/nice-select.min.js"></script>
+    <script src="../../static/data/js/jquery.slicknav.min.js"></script>
+    <script src="../../static/data/js/jquery.magnific-popup.min.js"></script>
+    <script src="../../static/data/js/plugins.js"></script>
+    <script src="../../static/data/js/gijgo.min.js"></script>
+    <!--contact js-->
+    <script src="../../static/data/js/contact.js"></script>
+    <script src="../../static/data/js/jquery.ajaxchimp.min.js"></script>
+    <script src="../../static/data/js/jquery.form.js"></script>
+    <script src="../../static/data/js/jquery.validate.min.js"></script>
+    <script src="../../static/data/js/mail-script.js"></script>
+
+    <script src="../../static/data/js/main.js"></script>
+    <script>
+        $('.datepicker').datepicker({
+            iconsLibrary: 'fontawesome',
+            icons: {
+                rightIcon: '<span class="fa fa-calendar"></span>'
+            }
+        });
+
+        $('.timepicker').timepicker({
+            iconsLibrary: 'fontawesome',
+            icons: {
+                rightIcon: '<span class="fa fa-clock-o"></span>'
+            }
+        });
+    $(document).ready(function() {
+    $('.js-example-basic-multiple').select2();
+});
+    </script>
+</body>
+
+</html>
