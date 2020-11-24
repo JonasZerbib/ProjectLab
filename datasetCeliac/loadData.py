@@ -170,7 +170,7 @@ def get_patient_factors(patient, clean_dataset, kmers):
 
 # This function load CDR3_IMGT column of the repertoire of a patient
 def get_table_data(i):
-    path = "vdjbase_data/P1_I" + str(i + 1) + "_S1/P1_I" + str(i + 1) + "_S1_genotyped_db-pass.tab"
+    path = "vdjbase_data/PROCESSED_V1/P1/_/P1_I" + str(i + 1) + "_S1/P1_I" + str(i + 1) + "_S1_genotyped_db-pass.tab"
     patient = pd.read_table(path, usecols=[37], dtype=str)
     return patient.applymap(str)
 
