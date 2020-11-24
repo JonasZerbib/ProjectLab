@@ -21,7 +21,7 @@ def HomeView(request):
         if form.is_valid():
             # process the data in form.cleaned_data as required
             dataset = form.cleaned_data["dataset"]
-            request.session['dataset'] = dataset  # set 'dataset' in the session
+#             request.session['dataset'] = dataset  # set 'dataset' in the session
             return redirect('data:cdr3')
         return redirect('home')
     else:  # if this is a GET request or the first time we access this view
@@ -53,8 +53,8 @@ def Cdr3View(request):
                           {'data1': img1, 'data2': img2, 'data3': img3, 'data4': img4, 'data5': img6})
 
     else:  # if a GET (or any other method) we'll create a blank form
-        dataset = request.session['dataset']  # get 'dataset' from the session
-        context = {'form': forms.Cdr3Form(), "dataset": dataset}
+#         dataset = request.session['dataset']  # get 'dataset' from the session
+        context = {'form': forms.Cdr3Form()}
         return render(request, 'data/cdr3.html', context)
 
 
@@ -80,8 +80,8 @@ def CrossValidationView(request):
             return render(request, 'data/crossValidationResults.html', {'data1': img1})
     # if a GET (or any other method) we'll create a blank form
     else:
-        dataset = request.session['dataset']  # get 'student_id' from the session
-        context = {'form': forms.CrossValidationForm(), "dataset": dataset}
+#         dataset = request.session['dataset']  # get dataset from the session
+        context = {'form': forms.CrossValidationForm()}
         return render(request, 'data/crossValidation.html', context)
 
 
