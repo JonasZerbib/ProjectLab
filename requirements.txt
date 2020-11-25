@@ -4,4 +4,4 @@ scipy
 sklearn
 matplotlib
 wrap
-pickle
+django
