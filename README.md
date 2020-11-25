@@ -10,4 +10,10 @@ In order to be able to download the project and make it work, please follow the 
   6. Run instruction 'python3 manage.py makemigrations'.
   7. Run instruction 'python3 manage.py migrate'
   8. Run instruction 'python3 manage.py runserver'
-  9. Open a new page on yout browser and enter the url: 
+  9. Open a new page on yout browser and enter the url: 'http://127.0.0.1:8000/data/home/'
+  
+ For now, you can see the home page of our interface, and then surf our interface. In our project book we explained how to use the interface and what each page consists of.
+  
+ In order to facilitate the installation of our project on your computer, here is a youtube video that we have prepared:
+ 
+ Thank you for following the instructions. 
