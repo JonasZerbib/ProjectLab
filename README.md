@@ -1,6 +1,6 @@
 Welcome to the project to develop a computational system for immunological repertoires in case of celiac disease
 
-In order to be able to download the project and make it work, please follow the following instructions:
+In order to be able to download the project and make it work, please follow the following instructions (Further down we have added a youtube video to explain the steps clearly):
 
   1. Download it from github directly in zip format: 'ProjectLab-main.zip', for example in your Desktop.
   2. Extract all file from zip file in a new folder named 'ProjectLab-main
