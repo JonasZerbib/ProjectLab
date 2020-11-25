@@ -14,6 +14,6 @@ In order to be able to download the project and make it work, please follow the 
   
  For now, you can see the home page of our interface, and then surf our interface. In our project book we explained how to use the interface and what each page consists of.
   
- In order to facilitate the installation of our project on your computer, here is a youtube video that we have prepared:
+ In order to facilitate the installation of our project on your computer, here is a youtube video that we have prepared: https://www.youtube.com/watch?v=byq_7YUaB90
  
  Thank you for following the instructions. 
