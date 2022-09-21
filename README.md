@@ -2,7 +2,7 @@
 
 <h2>Description</h2>
 Welcome to the project to develop a computational system for immunological repertoires in case of celiac disease.
-Development of application to allows scientist without knowing of code/technology to build and train their own model using machine learning algorithms on the application.
+In this project i developed an application to allows scientist without knowing of code/technology to build and train their own model using machine learning algorithms on the application.
 <br />
 
 <h2>Language Used</h2>
