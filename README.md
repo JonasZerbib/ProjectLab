@@ -1,8 +1,7 @@
-Welcome to the project to develop a computational system for immunological repertoires in case of celiac disease
-
-<h1>Data-Science-&-Full-Stack-Project</h1>
+<h1>Data Science & FullStack Project</h1>
 
 <h2>Description</h2>
+Welcome to the project to develop a computational system for immunological repertoires in case of celiac disease.
 Development of application to allows scientist without knowing of code/technology to build and train their own model using machine learning algorithms on the application.
 <br />
 
