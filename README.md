@@ -1,5 +1,47 @@
 Welcome to the project to develop a computational system for immunological repertoires in case of celiac disease
 
+<h1>Data-Science-&-Full-Stack-Project</h1>
+
+<h2>Description</h2>
+Development of application to allows scientist without knowing of code/technology to build and train their own model using machine learning algorithms on the application.
+<br />
+
+<h2>Language Used</h2>
+
+- <b>Python</b>
+- <b>HTML</b>
+- <b>CSS</b>
+
+<h2>Technologie</h2>
+
+- <b>Django framework</b>
+
+<h2>Packages Used </h2>
+
+- <b>Pandas</b> 
+- <b>Matplotlib</b> 
+- <b>Numpy</b> 
+- <b>Multitprocess</b>
+
+<h2>Algorithm</h2>
+
+- <b>Logistic Regression machine learning algorithm</b> 
+
+
+
+
+<!--
+ ```diff
+- text in red
++ text in green
+! text in orange
+# text in gray
+@@ text in purple (and bold)@@
+```
+--!>
+
+<h2>Installation/h2>
+
 In order to be able to download the project and make it work, please follow the following instructions (Further down we have added a youtube video to explain the steps clearly):
 
   1. Download it from github directly in zip format: 'ProjectLab-main.zip', for example in your Desktop.
