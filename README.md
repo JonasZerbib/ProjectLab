@@ -40,7 +40,6 @@ Development of application to allows scientist without knowing of code/technolog
 ```
 --!>
 
-<h2>Installation/h2>
 
 In order to be able to download the project and make it work, please follow the following instructions (Further down we have added a youtube video to explain the steps clearly):
 
